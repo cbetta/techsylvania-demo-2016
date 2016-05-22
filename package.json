@@ -4,14 +4,24 @@
   "description": "A simple demo counter using Rollup, Riot and Redux",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c rollup.js"
   },
   "author": "Cristiano Betta",
   "license": "MIT",
   "dependencies": {
     "redux": "^3.5.2",
     "riot": "^2.4.0",
-    "riot-redux-mixin": "^1.0.0"
+    "riot-redux-mixin": "^1.0.0",
+    "rollup": "^0.26.3"
   },
-  "repository": "https://github.com/cbetta/techsylvania-demo-2016"
+  "repository": "https://github.com/cbetta/techsylvania-demo-2016",
+  "devDependencies": {
+    "rollup-plugin-babel": "^2.4.0",
+    "rollup-plugin-commonjs": "^2.2.1",
+    "rollup-plugin-node-resolve": "^1.5.0",
+    "rollup-plugin-replace": "^1.1.0",
+    "rollup-plugin-riot": "^0.2.0",
+    "rollup-plugin-uglify": "^0.3.1"
+  }
 }
