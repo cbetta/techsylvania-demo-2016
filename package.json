@@ -1,0 +1,17 @@
+{
+  "name": "techsylvania-2016-demo",
+  "version": "1.0.0",
+  "description": "A simple demo counter using Rollup, Riot and Redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cristiano Betta",
+  "license": "MIT",
+  "dependencies": {
+    "redux": "^3.5.2",
+    "riot": "^2.4.0",
+    "riot-redux-mixin": "^1.0.0"
+  },
+  "repository": "https://github.com/cbetta/techsylvania-demo-2016"
+}
