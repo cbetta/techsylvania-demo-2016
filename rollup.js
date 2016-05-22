@@ -1,5 +1,5 @@
 import riot     from 'rollup-plugin-riot';
-import npm      from 'rollup-plugin-npm';
+import npm      from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import babel    from 'rollup-plugin-babel';
 import uglify   from 'rollup-plugin-uglify';
