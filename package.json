@@ -1,13 +1,13 @@
 {
   "name": "techsylvania-2016-demo",
   "version": "1.0.0",
-  "description": "A simple demo counter using Rollup, Riot and Redux",
+  "description": "A simple demo counter using WebPack, Riot and Redux",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c rollup.js",
-    "server": "http-server -p 4000 .",
-    "open": "opener http://localhost:4000",
+    "build": "webpack",
+    "server": "webpack-dev-server --inline --hot",
+    "open": "opener http://localhost:8080",
     "start": "npm run open && npm run server"
   },
   "author": "Cristiano Betta",
@@ -20,14 +20,12 @@
   },
   "repository": "https://github.com/cbetta/techsylvania-demo-2016",
   "devDependencies": {
-    "babel-preset-es2015-rollup": "^1.1.1",
-    "http-server": "^0.9.0",
-    "opener": "^1.4.1",
-    "rollup-plugin-babel": "^2.4.0",
-    "rollup-plugin-commonjs": "^2.2.1",
-    "rollup-plugin-node-resolve": "^1.5.0",
-    "rollup-plugin-replace": "^1.1.0",
-    "rollup-plugin-riot": "^0.2.0",
-    "rollup-plugin-uglify": "^0.3.1"
+    "babel": "^6.5.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015-webpack": "^6.4.1",
+    "riot": "^2.4.1",
+    "riotjs-loader": "^3.0.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }

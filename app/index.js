@@ -4,7 +4,6 @@ import riot from "riot";
 import { createStore } from 'redux';
 import StoreMixin   from 'riot-redux-mixin';
 
-
 let reducer = function(state = 0, action) {
   if (action.type == 'increment') {
     state += 1;
